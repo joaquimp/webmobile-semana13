@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "Joaquim P. Filho",
+        "tia": "3011963-5",
+        "curso": "Ciência da Computação",
+        "foto": "https://images.unsplash.com/photo-1536164261511-3a17e671d380?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
+    },
+    {
+        "nome": "Celia Regina",
+        "tia": "4201993-3",
+        "curso": "Gastronomia",
+        "foto": "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
+    },
+    {
+        "nome": "Paulo Henrique Baptista",
+        "tia": "3170382-3",
+        "curso": "Farmácia",
+        "foto": "https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
+    },
+    {
+        "nome": "Camila Oliveira",
+        "tia": "4191893-1",
+        "curso": "Sistemas de Informação",
+        "foto": "https://images.unsplash.com/photo-1522720962427-d53e89da4071?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
+    }
+]
