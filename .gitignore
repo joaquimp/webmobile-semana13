@@ -1,0 +1,9 @@
+# compiled output
+/Alunos-Back-End/dist/*
+
+# dependencies
+/Alunos-Back-End/node_modules
+
+# System Files
+.DS_Store
+Thumbs.db

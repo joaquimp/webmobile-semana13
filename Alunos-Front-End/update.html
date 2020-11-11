@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Update</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    <script type="text/javascript" src="js/api.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body onload="mostrarAlunosUpdate()">
+    <h1>Formulário de Alteração de Dados</h1>
+    <div class="formulario">
+        <div class="campo">
+            <label>TIA:</label>
+            <input type="text" id="formTia" value="" placeholder="não editável" disabled />
+        </div>
+        
+        <div class="campo">
+            <label>Nome:</label>
+            <input type="text" id="formNome" value="" placeholder="nome completo" />
+        </div>
+        
+        <div class="campo">
+            <label>Curso:</label>
+            <input type="text" id="formCurso" value="" placeholder="informe o nome do seu curso aqui" />
+        </div>
+        
+        <div class="campo">
+            <label>Foto:</label>
+            <input type="text" id="formFoto" value="" placeholder="coloque uma URL válida" /><br>
+        </div>
+        
+        <img src="" id="foto" width="50px" />
+        
+        <button onclick="atualizarAluno()" id="botao">Alterar</button>
+    </div>
+    
+    <div id="mensagem"></div>
+    
+    <h2>Lista de alunos</h2>
+    <div id="alunos"></div>
+    
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+html, body{
+    height: 100%;
+    background-color: #f0f0f0;
+    font-family: monospace;
+}
+
+#alunos{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+#alunos article{
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    height: 510px;
+    width: 300px;
+}
+
+#alunos article img{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    max-height: 400px;
+}
+
+#alunos article h1{
+    text-align: center;
+}
+
+#alunos article p{
+    padding: 0 10px;
+    width: calc(100% - 20px);
+}
+
+#alunos article p span{
+    height: 10px;
+    display: block;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.formulario {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #fff;
+    width: 400px;
+    padding: 10px;
+}
+
+.formulario .campo {
+    flex: none;
+    margin: 10px;
+    display: block;
+}
+
+.formulario .campo label {
+    flex: auto;
+    display: block;
+    width: 225px;
+}
+
+.formulario .campo input {
+    width: 300px;
+}
+
+.formulario button {
+    padding: 5px;
+    margin: 5px;
+    width: 390px;
+}
+
+.error_message {
+    color: red;
+}
+
+.success_message {
+    color: green;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.image-cell {
+    padding: 0px;
+}
