@@ -3,11 +3,9 @@ var BASE_URL = 'http://localhost:3000';
 function mostrarAlunos() {
     readAll(function (status, dados) {
         if(status < 200 || status > 299 ) {
-            document.getElementById("alunos").innerHTML = "Erro ao carregar os dados";
+            document.getElementById("alunos").innerHTML += "Erro ao carregar os dados";
             return;
         }
-        
-        document.getElementById("alunos").innerHTML = "";
         
         for(var i=0; i<dados.length; i++) {
             aluno = dados[i];
@@ -78,8 +76,6 @@ function atualizarForm(tia) {
         document.getElementById("formNome").value = dados.nome;
         document.getElementById("formCurso").value = dados.curso;
         document.getElementById("formFoto").value = dados.foto;
-        
-        document.getElementById("foto").src = dados.foto;
     });
 }
 
@@ -119,9 +115,6 @@ function adiconarAluno() {
         foto: document.getElementById('formFoto').value,
     }
     
-    //Validação
-    // ToDo
-    
     create(aluno, function(status, dados) {
         if(status < 200 || status > 299 ) {
             document.getElementById("mensagem").innerHTML += "<p>Erro ao adicionar um novo alunos: " + status + "</p>";
@@ -153,10 +146,7 @@ function apagarAluno(tia) {
 }
 
 
-/////////////////////////////////
-// Requisições WEB à nossa API
 // Vamos implementar o CRUD
-/////////////////////////////////
 
 ///////////////////////////
 // ******  CREATE  ******//
