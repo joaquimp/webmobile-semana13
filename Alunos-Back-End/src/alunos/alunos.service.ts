@@ -10,9 +10,10 @@ export class AlunosService {
     //CREATE
     async create(aluno: Aluno) {
         const newAluno = new this.alunoModel(aluno);
-
+        
         try {
-            return Aluno.clean(await newAluno.save());
+            // return Aluno.clean(await newAluno.save());
+            return await newAluno.save();
         } catch(error) {
             return undefined;
         }
@@ -20,17 +21,31 @@ export class AlunosService {
 
     //READ
     async readAll() {
+        // return await this.alunoModel.find().exec();
         const result = await this.alunoModel.find().exec();
         return result.map(Aluno.clean);
     }
 
     async readByTia(tia: string) {
         // return await this.alunoModel.find({'tia': tia}).exec();
-        return await this.alunoModel.findOne({'tia': tia});
+        // const result = await this.alunoModel.findOne({'tia': tia});
+
+        // if(!result) return result;
+
+        // return Aluno.clean(result);
+
+        try {
+            return Aluno.clean(await this.alunoModel.findOne({'tia': tia}));
+        }catch(error) {
+            return undefined;
+        }
+
+        
     }
 
     async readByCurso(curso: string) {
-        return await this.alunoModel.find({'curso': curso}).exec();
+        const result = await this.alunoModel.find({'curso': curso}).exec();
+        return result.map(Aluno.clean);
     }
 
     //UPDATE
